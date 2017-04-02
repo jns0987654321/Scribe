@@ -12,6 +12,8 @@
 		524E513C1E9193F500B94DBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 524E513A1E9193F500B94DBD /* Main.storyboard */; };
 		524E513E1E9193F500B94DBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 524E513D1E9193F500B94DBD /* Assets.xcassets */; };
 		524E51411E9193F500B94DBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 524E513F1E9193F500B94DBD /* LaunchScreen.storyboard */; };
+		524E514C1E919C8B00B94DBD /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524E514B1E919C8B00B94DBD /* CircleButton.swift */; };
+		524E514E1E91A05100B94DBD /* test.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 524E514D1E91A05100B94DBD /* test.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		524E513D1E9193F500B94DBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		524E51401E9193F500B94DBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		524E51421E9193F500B94DBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		524E514B1E919C8B00B94DBD /* CircleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
+		524E514D1E91A05100B94DBD /* test.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,48 @@
 		524E51351E9193F500B94DBD /* Scribe */ = {
 			isa = PBXGroup;
 			children = (
+				524E514F1E91A06700B94DBD /* Resources */,
+				524E514A1E919C6600B94DBD /* Controller */,
+				524E51491E919C6000B94DBD /* View */,
+				524E51481E919C5500B94DBD /* Model */,
 				524E51361E9193F500B94DBD /* AppDelegate.swift */,
-				524E51381E9193F500B94DBD /* ViewController.swift */,
 				524E513A1E9193F500B94DBD /* Main.storyboard */,
 				524E513D1E9193F500B94DBD /* Assets.xcassets */,
 				524E513F1E9193F500B94DBD /* LaunchScreen.storyboard */,
 				524E51421E9193F500B94DBD /* Info.plist */,
 			);
 			path = Scribe;
+			sourceTree = "<group>";
+		};
+		524E51481E919C5500B94DBD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		524E51491E919C6000B94DBD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				524E51381E9193F500B94DBD /* ViewController.swift */,
+				524E514B1E919C8B00B94DBD /* CircleButton.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		524E514A1E919C6600B94DBD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		524E514F1E91A06700B94DBD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				524E514D1E91A05100B94DBD /* test.m4a */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +162,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				524E514E1E91A05100B94DBD /* test.m4a in Resources */,
 				524E51411E9193F500B94DBD /* LaunchScreen.storyboard in Resources */,
 				524E513E1E9193F500B94DBD /* Assets.xcassets in Resources */,
 				524E513C1E9193F500B94DBD /* Main.storyboard in Resources */,
@@ -137,6 +176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				524E514C1E919C8B00B94DBD /* CircleButton.swift in Sources */,
 				524E51391E9193F500B94DBD /* ViewController.swift in Sources */,
 				524E51371E9193F500B94DBD /* AppDelegate.swift in Sources */,
 			);
@@ -265,6 +305,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6W27TEN3TD;
 				INFOPLIST_FILE = Scribe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.juniorsamaroo.Scribe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -278,6 +319,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6W27TEN3TD;
 				INFOPLIST_FILE = Scribe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.juniorsamaroo.Scribe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
